@@ -40,6 +40,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   border: none;
   border-radius: 12px;
