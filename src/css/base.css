@@ -1,6 +1,7 @@
 :root {
   --black: #121417;
   --green: #4dc274;
+  --green-hover: #38ae5f;
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #ffffff;
@@ -33,4 +34,75 @@ main {
   overflow: hidden;
   clip: rect(0 0 0 0);
   border: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+
+  transition:
+    background-color 250ms ease,
+    color 250ms ease;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--green-hover);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+
+.section-description {
+  margin: 0 auto 40px;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--black-light);
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .section-description {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
