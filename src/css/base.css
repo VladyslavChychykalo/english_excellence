@@ -6,6 +6,7 @@
   --white: #ffffff;
   --green_linear: linear-gradient(90deg, #4dc274 0%, #bee8cc 100%);
   --font-family: 'Manrope', sans-serif;
+  --black-light: rgba(18, 20, 23, 0.5);
 }
 
 body {
