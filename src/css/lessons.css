@@ -1,0 +1,272 @@
+.lessons {
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lessons-item {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border: 1px solid rgba(77, 194, 116, 0.4);
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.lessons-item-accent {
+  background-color: var(--green);
+}
+
+.lessons-item-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--black);
+}
+
+.lessons-item-accent .lessons-item-title {
+  color: var(--white);
+}
+
+.lessons-item-price {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
+}
+
+.lessons-item-accent .lessons-item-price {
+  color: var(--white);
+}
+
+.lessons-item-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.lessons-item-accent .lessons-item-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lessons-item-link {
+  margin-top: auto;
+}
+
+.lessons-offer {
+  margin-top: 40px;
+  padding: 40px 20px;
+  border-radius: 30px;
+  background: linear-gradient(270deg, #85d9a5 0%, #4dc274 100%);
+}
+
+.lessons-offer-title {
+  margin-bottom: 65px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.lessons-offer-box {
+  position: relative;
+}
+
+.lessons-offer-card {
+  position: relative;
+  z-index: 2;
+  border-radius: 16px;
+  background-color: var(--white);
+  padding: 40px 20px;
+}
+
+.lessons-offer-box::before,
+.lessons-offer-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+}
+
+.lessons-offer-box::before {
+  bottom: 34px;
+  border-radius: 16px;
+  transform: rotate(-7deg);
+  background-color: var(--light-green);
+  z-index: 1;
+}
+
+.lessons-offer-box::after {
+  bottom: 16px;
+  transform: rotate(10deg);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+
+.lessons-offer-subtitle {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.lessons-offer-list {
+  margin-bottom: 20px;
+}
+
+.lessons-offer-item {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  color: var(--black);
+}
+
+.lessons-offer-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.lessons-offer-item::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.lessons-offer-image {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .lessons {
+  }
+
+  .lessons-offer-subtitle {
+    font-size: 40px;
+  }
+
+  .lessons-offer-item {
+    font-size: 20px;
+  }
+
+  .lessons-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .lessons-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .lessons-offer {
+    margin-top: 32px;
+    padding: 64px 18px;
+  }
+
+  .lessons-offer-box::before {
+    transform: rotate(-11deg);
+  }
+
+  .lessons-offer-title {
+    margin-bottom: 83px;
+    font-size: 60px;
+    line-height: 1.2;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .lessons-offer-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 32px;
+    overflow: hidden;
+  }
+
+  .lessons-offer-list {
+    margin-bottom: 32px;
+    max-width: 442px;
+  }
+
+  .lessons-offer-image {
+    display: block;
+    position: absolute;
+    right: -60px;
+    bottom: 22px;
+    width: 214px;
+    margin-left: 16px;
+  }
+
+  .lessons-offer-link {
+    width: fit-content;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lessons {
+  }
+
+  .lessons-offer-card {
+    padding: 64px;
+  }
+
+  .lessons-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .lessons-offer {
+    margin-top: 32px;
+    padding: 64px;
+  }
+
+  .lessons-offer-box::before {
+    transform: rotate(-7deg);
+  }
+
+  .lessons-offer-box::after {
+    transform: rotate(7deg);
+  }
+
+  .lessons-offer-title {
+    max-width: 776px;
+    margin-bottom: 133px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .lessons-offer-list {
+    max-width: 660px;
+  }
+
+  .lessons-offer-image {
+    right: -8px;
+    bottom: 70px;
+  }
+}
