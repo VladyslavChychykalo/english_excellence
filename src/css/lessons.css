@@ -131,8 +131,9 @@
 }
 
 .lessons-offer-item {
-  position: relative;
-  padding-left: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.43;
@@ -143,23 +144,13 @@
   margin-bottom: 16px;
 }
 
-.lessons-offer-item::before {
-  content: '\2713';
-  position: absolute;
-  left: 0;
+.lessons-offer-item-icon {
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 10px;
-  line-height: 14px;
-  text-align: center;
-  color: var(--white);
   background-color: var(--green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  fill: none;
 }
 
 .lessons-offer-image {
