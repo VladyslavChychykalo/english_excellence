@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/english_excellence/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/english_excellence/assets/index-CNTCUyFZ.css">
+    <link rel="stylesheet" crossorigin href="/english_excellence/assets/index-BD2KEWX-.css">
   </head>
   <body>
     <header class="header">
@@ -477,7 +477,9 @@
       </div>
 
       <form class="application-form">
+        <label class="visually-hidden" for="application-name">Name</label>
         <input
+          id="application-name"
           class="application-input"
           type="text"
           name="name"
@@ -486,7 +488,9 @@
           pattern="[A-Za-zА-Яа-яІіЇїЄє' -]{2,}"
           title="Name should contain at least 2 letters"
         />
+        <label class="visually-hidden" for="application-email">Email</label>
         <input
+          id="application-email"
           class="application-input"
           type="email"
           name="email"
@@ -495,7 +499,9 @@
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           title="Please enter a valid email address"
         />
+        <label class="visually-hidden" for="application-phone">Phone</label>
         <input
+          id="application-phone"
           class="application-input"
           type="tel"
           name="phone"
@@ -504,7 +510,9 @@
           pattern="^\+?[0-9\s\-()]{7,20}$"
           title="Use phone format like +380501112233"
         />
+        <label class="visually-hidden" for="application-comment">Comment</label>
         <textarea
+          id="application-comment"
           class="application-textarea"
           name="comment"
           placeholder="Comment"
