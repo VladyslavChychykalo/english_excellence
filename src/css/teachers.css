@@ -1,24 +1,6 @@
 .teachers {
 }
 
-.teachers-accent {
-  position: relative;
-  z-index: 0;
-  display: inline-block;
-}
-
-.teachers-accent::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 3px;
-  z-index: -1;
-  width: 100%;
-  height: 8px;
-  border-radius: 8px;
-  background-color: var(--light-green);
-}
-
 .teachers-list {
   display: flex;
   flex-direction: column;
@@ -50,11 +32,6 @@
 
 @media only screen and (min-width: 768px) {
   .teachers {
-  }
-
-  .teachers-accent::after {
-    bottom: 5px;
-    height: 11px;
   }
 
   .teachers-list {
