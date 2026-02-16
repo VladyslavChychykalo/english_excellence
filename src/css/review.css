@@ -70,7 +70,7 @@
 
   .review-item {
     width: calc((100% - 52px) / 3);
-    padding: 32px;
+    padding: 32px 16px;
   }
 
   .review-item:nth-child(3) {

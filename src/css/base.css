@@ -124,6 +124,11 @@ section:not(.hero) {
 }
 
 @media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
   .section-title {
     margin-bottom: 16px;
     font-size: 40px;
@@ -133,7 +138,7 @@ section:not(.hero) {
   .section-description {
     margin-bottom: 64px;
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 1.6;
   }
 
   .title-accent::after {
@@ -146,8 +151,12 @@ section:not(.hero) {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
   section:not(.hero) {
     margin-top: 150px;
+  }
+
+  .section-description {
+    max-width: 700px;
   }
 }

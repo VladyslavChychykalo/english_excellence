@@ -67,6 +67,7 @@
   width: 18px;
   height: 18px;
   margin: 0;
+  /* 121417 alfa 20% */
   border: 2px solid #d9d9d9;
   border-radius: 50%;
   appearance: none;
@@ -113,10 +114,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .application-description {
-    max-width: 586px;
-  }
-
   .application-input,
   .application-textarea {
     margin-bottom: 16px;
@@ -130,6 +127,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .application-policy {
+    font-size: 14px;
+  }
+
+  .application-form {
+    margin: 0 auto;
   }
 }
 
@@ -173,5 +179,6 @@
   .application-card,
   .application-form {
     width: calc((100% - 32px) / 2);
+    max-width: none;
   }
 }
