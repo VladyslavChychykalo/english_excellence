@@ -65,24 +65,11 @@
   color: var(--white);
 }
 
-.footer-social-list {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .footer-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
   color: var(--white);
-  transition:
-    color 250ms ease,
-    border-color 250ms ease;
 }
 
 .footer-social-link:hover,
@@ -90,11 +77,6 @@
   color: var(--green);
   border-color: rgba(77, 194, 116, 0.4);
 }
-
-.footer-social-icon {
-  fill: currentColor;
-}
-
 .footer-bottom {
   margin-top: 40px;
   padding-top: 20px;

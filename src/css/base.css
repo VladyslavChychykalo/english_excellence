@@ -119,6 +119,28 @@ main {
   background-color: var(--light-green-2);
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition:
+    color 250ms ease,
+    border-color 250ms ease;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 section:not(.hero) {
   margin-top: 80px;
 }
