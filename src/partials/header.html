@@ -70,7 +70,12 @@
       </li>
     </ul>
 
-    <button class="header-menu-btn" type="button" aria-label="Open menu">
+    <button
+      id="menu-open-btn"
+      class="header-menu-btn"
+      type="button"
+      aria-label="Open menu"
+    >
       <svg
         class="header-menu-icon header-menu-icon-mobile"
         width="32"
@@ -90,9 +95,10 @@
 </header>
 
 <!-- To open mobile menu manually add class `is-open`: class="header-mobile-menu is-open" -->
-<div class="header-mobile-menu">
+<div id="mobile-menu" class="header-mobile-menu">
   <div class="header-mobile-menu-panel">
     <button
+      id="menu-close-btn"
       class="header-mobile-menu-close-btn"
       type="button"
       aria-label="Close menu"
@@ -113,7 +119,7 @@
       </svg>
     </button>
 
-    <nav class="header-mobile-nav" aria-label="Mobile navigation">
+    <nav id="mobile-menu-nav" class="header-mobile-nav" aria-label="Mobile navigation">
       <ul class="header-mobile-nav-list">
         <li>
           <a class="header-mobile-nav-link" href="#about">About us</a>
