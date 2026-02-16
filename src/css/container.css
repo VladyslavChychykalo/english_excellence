@@ -17,4 +17,9 @@
     max-width: 1280px;
     padding: 0 64px;
   }
+
+  header .container,
+  section:not(.hero):not(.lessons) .container {
+    padding: 0 128px;
+  }
 }
