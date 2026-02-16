@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/english_excellence/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Excellence</title>
     <link
@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-DYPVwXKT.css">
+    <script type="module" crossorigin src="/english_excellence/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/english_excellence/assets/index-CXuT0-rY.css">
   </head>
   <body>
     <header class="header">
@@ -59,7 +59,7 @@
           aria-label="Facebook"
         >
           <svg class="social-icon" width="20" height="20">
-            <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-facebook"></use>
+            <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
@@ -72,7 +72,7 @@
           aria-label="Instagram"
         >
           <svg class="social-icon" width="20" height="20">
-            <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-instagram"></use>
+            <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
@@ -85,35 +85,41 @@
           aria-label="YouTube"
         >
           <svg class="social-icon" width="20" height="20">
-            <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-youtube"></use>
+            <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
 
-    <button class="header-menu-btn" type="button" aria-label="Open menu">
+    <button
+      id="menu-open-btn"
+      class="header-menu-btn"
+      type="button"
+      aria-label="Open menu"
+    >
       <svg
         class="header-menu-icon header-menu-icon-mobile"
         width="32"
         height="32"
       >
-        <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-burger-mobile"></use>
+        <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-burger-mobile"></use>
       </svg>
       <svg
         class="header-menu-icon header-menu-icon-tablet"
         width="32"
         height="32"
       >
-        <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-burger-tablet"></use>
+        <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-burger-tablet"></use>
       </svg>
     </button>
   </div>
 </header>
 
 <!-- To open mobile menu manually add class `is-open`: class="header-mobile-menu is-open" -->
-<div class="header-mobile-menu">
+<div id="mobile-menu" class="header-mobile-menu">
   <div class="header-mobile-menu-panel">
     <button
+      id="menu-close-btn"
       class="header-mobile-menu-close-btn"
       type="button"
       aria-label="Close menu"
@@ -123,18 +129,18 @@
         width="32"
         height="32"
       >
-        <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-close-mobile"></use>
+        <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-close-mobile"></use>
       </svg>
       <svg
         class="header-mobile-menu-close-icon-tablet"
         width="32"
         height="32"
       >
-        <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-close-tablet"></use>
+        <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-close-tablet"></use>
       </svg>
     </button>
 
-    <nav class="header-mobile-nav" aria-label="Mobile navigation">
+    <nav id="mobile-menu-nav" class="header-mobile-nav" aria-label="Mobile navigation">
       <ul class="header-mobile-nav-list">
         <li>
           <a class="header-mobile-nav-link" href="#about">About us</a>
@@ -164,7 +170,7 @@
           aria-label="Facebook"
         >
           <svg class="social-icon" width="20" height="20">
-            <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-facebook"></use>
+            <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
@@ -177,7 +183,7 @@
           aria-label="Instagram"
         >
           <svg class="social-icon" width="20" height="20">
-            <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-instagram"></use>
+            <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
@@ -190,7 +196,7 @@
           aria-label="YouTube"
         >
           <svg class="social-icon" width="20" height="20">
-            <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-youtube"></use>
+            <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -216,7 +222,7 @@
       <a class="hero-scroll-link" href="#footer">
         <span class="hero-scroll-icon-wrap">
           <svg class="hero-scroll-icon" width="14" height="14">
-            <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-angle"></use>
+            <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-angle"></use>
           </svg>
         </span>
       </a>
@@ -260,8 +266,8 @@
 
       <div class="about-illustration">
         <img
-          src="/vanilla-app-template/assets/person-DkiQ8z4G.png"
-          srcset="/vanilla-app-template/assets/person@2x-C3-G8EDe.png 2x"
+          src="/english_excellence/assets/person-DkiQ8z4G.png"
+          srcset="/english_excellence/assets/person@2x-C3-G8EDe.png 2x"
           width="254px"
           height="211"
           alt="Person"
@@ -350,8 +356,8 @@
 
           <img
             class="lessons-offer-image"
-            src="/vanilla-app-template/assets/books-1Xv536Cv.png"
-            srcset="/vanilla-app-template/assets/books@2x-TylQfiwl.png 2x"
+            src="/english_excellence/assets/books-1Xv536Cv.png"
+            srcset="/english_excellence/assets/books@2x-TylQfiwl.png 2x"
             alt="Stack of books"
           />
         </div>
@@ -374,8 +380,8 @@
       <li class="teachers-item">
         <img
           class="teachers-image"
-          src="/vanilla-app-template/assets/maria-BPCB6fKK.png"
-          srcset="/vanilla-app-template/assets/maria@2x-B7n-37Zi.png 2x"
+          src="/english_excellence/assets/maria-BPCB6fKK.png"
+          srcset="/english_excellence/assets/maria@2x-B7n-37Zi.png 2x"
           width="150"
           height="150"
           alt="Maria"
@@ -389,8 +395,8 @@
       <li class="teachers-item">
         <img
           class="teachers-image"
-          src="/vanilla-app-template/assets/artem-Cbo59INf.png"
-          srcset="/vanilla-app-template/assets/artem@2x-QKbMtqxd.png 2x"
+          src="/english_excellence/assets/artem-Cbo59INf.png"
+          srcset="/english_excellence/assets/artem@2x-QKbMtqxd.png 2x"
           width="150"
           height="150"
           alt="Artem"
@@ -404,8 +410,8 @@
       <li class="teachers-item">
         <img
           class="teachers-image"
-          src="/vanilla-app-template/assets/ilona-CWqGOBcS.png"
-          srcset="/vanilla-app-template/assets/ilona@2x-BVJYRXw7.png 2x"
+          src="/english_excellence/assets/ilona-CWqGOBcS.png"
+          srcset="/english_excellence/assets/ilona@2x-BVJYRXw7.png 2x"
           width="150"
           height="150"
           alt="Ilona"
@@ -420,8 +426,8 @@
       <li class="teachers-item">
         <img
           class="teachers-image"
-          src="/vanilla-app-template/assets/volodymyr-DfWnE6lS.png"
-          srcset="/vanilla-app-template/assets/volodymyr@2x-DFBFEveg.png 2x"
+          src="/english_excellence/assets/volodymyr-DfWnE6lS.png"
+          srcset="/english_excellence/assets/volodymyr@2x-DFBFEveg.png 2x"
           width="150"
           height="150"
           alt="Volodymyr"
@@ -451,8 +457,8 @@
       <div class="application-card">
         <img
           class="application-image"
-          src="/vanilla-app-template/assets/application-QhuLbhGg.png"
-          srcset="/vanilla-app-template/assets/application@2x-COFG16mT.png 2x"
+          src="/english_excellence/assets/application-QhuLbhGg.png"
+          srcset="/english_excellence/assets/application@2x-COFG16mT.png 2x"
           width="492"
           height="392"
           alt="Student with headset"
@@ -566,8 +572,8 @@
         <div class="review-author">
           <img
             class="review-avatar"
-            src="/vanilla-app-template/assets/anna-CgNQ58-4.png"
-            srcset="/vanilla-app-template/assets/anna@2x-Dk8nSV3E.png 2x"
+            src="/english_excellence/assets/anna-CgNQ58-4.png"
+            srcset="/english_excellence/assets/anna@2x-Dk8nSV3E.png 2x"
             width="50"
             height="50"
             alt="Anna"
@@ -589,7 +595,7 @@
           <img
             class="review-avatar"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAyCSURBVHgBrdpJjFzVFQbg6wEwc5mxmcuMBgHuCBaGTbolkBgkYksIYUByZ4kAYe8SWNBhxYrGrAJCgl4gJSwQERsHFu6IKQEEbebZZeaZYrYZc75LH6tcdHVXt32lp1fvvfvu/f9z/nPu8GpB2U1laGio+fPPPw/ttddeK3744YehH3/8sbFkyZLGHnvs0XjzzTfLkUceWfbbb7/Wli1bWj/99NPkmWeeufnxxx+f+PDDD1tlN5QFZRfKqlWrGgH6+m+//XYkQDe//vrrEsDLwQcfXA488MDy3nvvlbfeeqssWLCg/PLLL+Wrr74qUa+e99133/L555+X888/v7Vp06YHgtyGbdu2tco8y6Iyj7Jy5cqhpUuX3h0//84L33//fePTTz8thx9+eFm0aFEJYuWZZ54phx12WDnqqKPKl19+WT755JP67LvvvivhrRLvl+OPP76sWLGi8dprr61st9vrFi5c2Pz11183R7vtMscyJyLkE5a+Ozq75aCDDmqyflixBIBy0kknVcAhLRIqg4ODpdVqlSBZvXTooYeWjz/+uGzfvr16LAxQms1mfcfvzz77zHkwulkXRzOOORHqm8ipp556fUjiHyGJQWCBcwBKOgApofnCO+6feOKJZfHixeWLL76oXjrkkEOqxPx232+x88EHH1SCjqmC0Ko4NDrZD76+iBxwwAFjof/RvffeewnA5KHQO62Lh/33379ek4wzcm+88Ub1Cou7F/Kp7/EgmR1zzDH1WXi4vPPOO5WY31OlMUXG+d+zYVw8y3ONbDrhhBMGdc5iEZQlriuYCPRq/UajUe8r6oTsyjfffFPvBflKkgRPPvnk6onnnntuB1kejExW3+sg0VlIbSiO4TKD1GYi0oiONkXjg6xMDnTM+qzMK7ROPgpSAlodwYycGBDwQAMJuHrLli2r5BgBQXV4y/MeZEht00xkehJJEiTA5crbb79dM5MCCIsbI3SOGJmdfvrpNVPRPtIZC4AiTm5iJjJVDX5S3XPPPWubPUh0k/lD30RCNmNIsBANy/c6jFiplmZBRAQ96wPL6ggcccQR9TlwiHrO6t5Tn+x4zVjC09qVGPosyIzFsX5WIuGBkbDguo7r8vLLL5eBgYFy9NFHV6AOwFhaDKRs9tlnnwpKFkJM8Yz+kWAU5BCX8d599936XLx51meBbWsct3XeXNhVqRngbuq8oQOgWY5cjjvuuCohWgcmM5CCBNCekQ858QaCPIi4+g7EEPKu6zkWGJs9iUSDO1VISwOnUwCddZx6ZmGHa6RJKYMeedlLfVJDDhmksk3G6EwGfRbZdKzzRqe0TA9Gpgs49wDJuRQ55bWzIwczQA18ApvnjOgIigkFWAR42T3PePnFF18scyzGmKE4JrqJ3NSLhM5YFyjgBazsJSvl+MFb6pJMbTjAAqi+jIaoAZDUjBsSggzGg+ZcDPDKK6+UOZabuok04xjpVZsXdGgsyakJebBuygJAgD/66KNqbfeefPLJGtAMQWLqyFTGHhmOZ8UPYowzS/qdrgyV32TWTiLretXM4GRBZHhCEMtkrJ5g1CEVnkHYmOPgId7I6YxULgPyQma6iy++uDz88MNlngX20STyp161WImsWEzHOjQvAowHMnilZKCQdSgpH55Iycl8nhuTxJK2jfBIzzCyz1TWJpFm6Upl3UQcQDqTjY6RYHmgADBKA3vGGWdUrZPY+++/X4OeFEkpB0yxJavxLu+Qmow2TyJNh/Q71E9tFhPsQJAQSxoDeAaIDNzzzjuvnHXWWTUujj322Er8lFNOqe8CjQg5MgSvaCsHy3mQyDLEI4P91LRYAl4mOvfcc+uslawcdM/qgAMZa5fqEeAAZmmEFPdcy2YGUMbQ1i6WQURW9FNTtqF1wMWLAoiD1gU5C+fanPXdy6Uvb/lNlooEwADui6VdLH/MGJm15HIUGRKQgdzL6YdMZkwxOJoBv/TSS7W+JS85Ipjv8xJS2nj++efLzTffPN/4yNIwSbqtn5oJBnAS89s9niIruyWxpq+BK24cCBpLDIRIIs47vIGwqTyPaq9z2jNdQXSmKQwio6WPIqBJBQDAFfEAAEufdtppVTb0broBcNbNfS1EeIQ3bBWRVudavZ+51nR14t6S2Za6OzWACP3nFJ5Ect0huGN/qqZY95599tn6e/369TVTAZ7rFwVR72lzDpPFngURS8fGbBVz3cDiUqnxAbBXX321xkRamjfUE+yWuk8//XQlnZb3m2dyzZ9pt98Y6a6T7zHFltJnwCsAiI2HHnqoAjMQjo2N1bmUKQu9OyzCdCCGZDWLLZ6UFNTlQVJEJFNyLqnnUqa82RIjI3EMzOVl8hAXOddau3Ztldn9999f51DIStHiAzhey3W7uEDCWENaJJZL6l5A+5DepBqy1vWlz5KNAnn22WeXNWvW1HFAMEsIl1122Q5gOVNGmHec3UeYh2699VZbpuXOO+/st/sd/XdJbAOP8Maq0mfRkP0pcrG/+8ILL9S0K5WSyg033FD3rZKc1CtliyHgr7322rqCHB0d3THPuvTSS2ssIZnySk/kwcudnuny1B3mWhNlDkVGAubqq68uV155Zc1GN954Y52L8Yjp/e23314lYy1CPiTlWtxIEhKGwTAHSTFz7733Vu9JEDYAc02fls/pUJYuj0zwiKw1UvrIXNmgYtNa8JrtPvroo3WsoHvxIw6uueaa8thjj1XvyGbS9jnnnFM9ZSozOTlZPaUNnrnvvvtq4jCQii9zO8/U7VxGd3srCLXi1t9y73dp6XMW7OXXX3+9dmjHULBLv4CZbsho7slcxhCknnrqqSqNSy65pD7bvHlzfd65d3zXXXdVYoDnHExfPOgw5Zf2ZUFezqlSlPE4NiYRO95/6QU8tehM9wY6lja9YE2A4oNNXX/kuJGb2RdeeGE9P/LII+Wiiy6qYMls69at9b54Gx8f37GpYWwBFHF1LeL8zg1ukkMcDn2E59aEdNtJZNuUR5rTkWElFjFC52cBjeowt3WAuPzyy2vgI2qaznMsK6CvuOKKHftfwEnBAEkAEgUivEOCuScgxvQtCehDfOYe2BTRe2IA5pGdPivYvRtJ6+sUcPJhGQ3l16bcCnXfhrYAt3hCTqB6j8YBAFoSkOWAA16mkyTcs3TWDkMwEIDeRVSseObac97QVk5IA8/qSBztbiKtOAbjxeUWT7KHRskHAZrMrZ+cyeqIpQEy6LEeT0ivQOmQQRjHda5nZCpZzswYuM7t1NwbJlnv8UKOSdqlDJii7j0Rl+MJfqcPPcuXL/9fBNRIWHuJjnO2muA1CkhOJ3KDbnh4uKZinhH0LJgrR14SrOqyshjw+8EHH6zt5ICpH+9JxVaaJJvP9GGMYrCpqVAr2vpz/G5PSyQqt0On28MDF+QcKD8r6DRJKcBcddVVVcdSam5oy0bcnwsv15mBECOpjAt1gGQ0HsiUC3QuEbSrDZLUp3aivfXh0YlO7L/79BYg/hsdSMcrXbOIkqvBXGfnzsl1111XB7gnnniiSlB8pDwSDLDIeI6E9y3EWJyHZCBnoBkhN7zzG2UuuvQfZUPI+JZu3NN+QwwLbYzOV8XLA5mdNC6jIJbpEQFTkEyN7tlNISUF+Pxk0JlCtWV644wsT2u3U04Zn3nPOQwxGbuSq6fD3PNjaATgPwPABQFmIEHlJlvn9CBlkylZbmdtsjE18Q4Cmely6kFamTzcy+8mObn0jniQMKbqTYZxh6PNbdPh7flhwiATAIfDMpMsBmiCzQkcAIJbh7SvqGtOZXCUxVg1Y6UzaPPDai6wcsGVcyrxkDEU/UyGV4Yj1ff8GDrj5+ltv5U7IghrzOgQgPSColNWy0DPDe38YgVMLokZQvyIEeOP9iqIqYGSYbyXn/Om+thATr080ReRDkIbo5Ot0aHP1I38oJPrbR4x9uRgmR9+cvc+v1CpnxvZxilbq50jdu4LaCfea0dw/zUmo6P9YOz7nw/RwWQ0/K8AuDQ6rLuTGcCZll0j0fmNhLQAB5DXZCX1TWNMApHJD0mZWKKfB6Kt1UFiY7/45vTxLtzbCu2OhLWWxTHOgmThMI1HAOjckJbl8uuttGs0l6nEiPFC1utcbwTBiTgPx4RydYv25lDm9e+g6LAdFn4gYmc8gCwIUgP+l+WDjf0t0gAs48M1zxixZTT3zOHMwxjHX5zCC6uD7B3xrFXmUXZ9Q2mq+L9WnIaC5GAssFaEVJrhqaYMJk5kwQj0dnioHbHzn/DKZNyaiNIqu6H8H20nPqERq+daAAAAAElFTkSuQmCC"
-            srcset="/vanilla-app-template/assets/mykhailo@2x-BLvjshGE.png 2x"
+            srcset="/english_excellence/assets/mykhailo@2x-BLvjshGE.png 2x"
             width="50"
             height="50"
             alt="Mykhailo"
@@ -610,8 +616,8 @@
         <div class="review-author">
           <img
             class="review-avatar"
-            src="/vanilla-app-template/assets/victoria-BEDYa_YR.png"
-            srcset="/vanilla-app-template/assets/victoria@2x-BAYpeJvX.png 2x"
+            src="/english_excellence/assets/victoria-BEDYa_YR.png"
+            srcset="/english_excellence/assets/victoria@2x-BAYpeJvX.png 2x"
             width="50"
             height="50"
             alt="Victoria"
@@ -680,7 +686,7 @@
               aria-label="Facebook"
             >
               <svg class="social-icon" width="20" height="20">
-                <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-facebook"></use>
+                <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -693,7 +699,7 @@
               aria-label="Instagram"
             >
               <svg class="social-icon" width="20" height="20">
-                <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-instagram"></use>
+                <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -706,7 +712,7 @@
               aria-label="YouTube"
             >
               <svg class="social-icon" width="20" height="20">
-                <use href="/vanilla-app-template/assets/icons-BVrFbbAf.svg#icon-youtube"></use>
+                <use href="/english_excellence/assets/icons-BVrFbbAf.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
