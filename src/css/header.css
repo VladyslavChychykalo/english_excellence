@@ -93,7 +93,9 @@
 }
 
 .header-mobile-nav {
-  margin-top: 124px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header-mobile-nav-list {
@@ -146,10 +148,6 @@
 
   .header-mobile-menu-close-icon-tablet {
     display: block;
-  }
-
-  .header-mobile-nav {
-    margin-top: 166px;
   }
 
   .header-mobile-nav-link {
