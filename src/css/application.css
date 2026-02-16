@@ -1,0 +1,190 @@
+.application {
+}
+
+.application-description {
+  max-width: 336px;
+}
+
+.application-card {
+  display: none;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-input,
+.application-textarea {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--black);
+  outline: none;
+  transition: border-color 250ms ease;
+}
+
+.application-textarea {
+  height: 94px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.application-input::placeholder,
+.application-textarea::placeholder {
+  color: var(--black);
+}
+
+.application-input:focus,
+.application-textarea:focus {
+  border-color: var(--green);
+}
+
+.application-radio-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: var(--black);
+}
+
+.application-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.application-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--black);
+}
+
+.application-radio-input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border: 2px solid #d9d9d9;
+  border-radius: 50%;
+  appearance: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 250ms ease;
+}
+
+.application-radio-input::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 250ms ease;
+  background-color: var(--green);
+}
+
+.application-radio-input:checked {
+  border-color: var(--green);
+}
+
+.application-radio-input:checked::before {
+  transform: scale(1);
+}
+
+.application-btn {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.application-policy {
+  font-size: 12px;
+  line-height: 1.33;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.application-policy-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application {
+  }
+
+  .application-description {
+    max-width: 586px;
+  }
+
+  .application-input,
+  .application-textarea {
+    margin-bottom: 16px;
+  }
+
+  .application-textarea {
+    margin-bottom: 32px;
+  }
+
+  .application-radio-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .application {
+  }
+
+  .application-content {
+    display: flex;
+    gap: 32px;
+  }
+
+  .application-card {
+    display: block;
+    width: calc((100% - 32px) / 2);
+    border-radius: 30px;
+    background-color: var(--green);
+    overflow: hidden;
+  }
+
+  .application-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .application-card-number {
+    margin: 20px 0 8px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .application-card-text {
+    padding: 0 16px 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .application-card,
+  .application-form {
+    width: calc((100% - 32px) / 2);
+  }
+}
