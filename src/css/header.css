@@ -1,5 +1,5 @@
 .header {
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .header-container {
@@ -39,7 +39,6 @@
 }
 
 .header-menu-icon {
-  fill: currentColor;
   stroke: currentColor;
 }
 
@@ -54,7 +53,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background-color: rgba(18, 20, 23, 0.45);
+  background-color: var(--black-light);
   transition:
     opacity 250ms ease,
     visibility 250ms ease;
@@ -87,11 +86,6 @@
   border: none;
   background-color: transparent;
   color: var(--white);
-}
-
-.header-mobile-menu-close-icon {
-  fill: currentColor;
-  stroke: currentColor;
 }
 
 .header-mobile-menu-close-icon-tablet {
@@ -129,7 +123,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--gray-light);
   border-radius: 10px;
   color: var(--white);
 }

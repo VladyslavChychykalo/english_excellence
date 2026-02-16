@@ -1,6 +1,3 @@
-.teachers {
-}
-
 .teachers-list {
   display: flex;
   flex-direction: column;
@@ -31,9 +28,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .teachers {
-  }
-
   .teachers-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,9 +40,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .teachers {
-  }
-
   .teachers-list {
     gap: 32px;
   }

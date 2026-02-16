@@ -3,11 +3,13 @@
   --green: #4dc274;
   --green-hover: #38ae5f;
   --light-green: #d4fde1;
+  --light-green-2: #bee8cc;
   --gray: #f3f5f6;
   --white: #ffffff;
   --green_linear: linear-gradient(90deg, #4dc274 0%, #bee8cc 100%);
   --font-family: 'Manrope', sans-serif;
   --black-light: rgba(18, 20, 23, 0.5);
+  --gray-light: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -95,6 +97,10 @@ main {
   color: var(--black-light);
 }
 
+.title-accent-background {
+  color: var(--light-green);
+}
+
 .title-accent {
   position: relative;
   z-index: 0;
@@ -105,12 +111,16 @@ main {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 3px;
+  bottom: -1px;
   z-index: -1;
   width: 100%;
-  height: 8px;
+  height: 12px;
   border-radius: 8px;
-  background-color: var(--light-green);
+  background-color: var(--light-green-2);
+}
+
+section:not(.hero) {
+  margin-top: 80px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -127,7 +137,17 @@ main {
   }
 
   .title-accent::after {
-    bottom: 5px;
-    height: 11px;
+    bottom: 4px;
+    height: 18px;
+  }
+
+  section:not(.hero) {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section:not(.hero) {
+    margin-top: 150px;
   }
 }
